@@ -1,0 +1,121 @@
+body {
+font-family:Arial, sans-serif;
+}
+
+p {
+margin-bottom:20px;
+}
+
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    position: relative;
+    overflow: hidden;
+    float:left;
+    width:100%;
+   
+   /* background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); 
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); 
+    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); 
+    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); 
+    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); 
+    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%);  */
+   
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;  
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width:95%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height:250px;
+    background:rgba(0,0,0,0.8);
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left{
+    padding:10px 15px;
+    border-radius:10px;
+    -webkit-border-radius:50px;      
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+    top:40%;
+   transform:translate(-30%,-10%);
+    background: white;
+}
+.nbs-flexisel-nav-right{
+    padding:10px 15px;
+    border-radius:10px;
+    -webkit-border-radius:50px;      
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+    top:40%;
+   transform:translate(20%,-10%);
+    background: white;
+    
+}
+.nbs-flexisel-nav-left:hover{ color:#ffcc33;}
+.nbs-flexisel-nav-right:hover{ color:#ffcc33; }
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+}
+
+.nbs-flexisel-nav-left:before {
+    content: "<"
+}
+.nbs-flexisel-nav-left:before:hover {
+    content: "<"
+
+}
+
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}
+
+.nbs-flexisel-nav-right {
+    right: 5px;    
+}
+
+.nbs-flexisel-nav-right:before {
+    content: ">"
+}
+
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
